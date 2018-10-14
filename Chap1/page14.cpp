@@ -29,4 +29,16 @@ int main(){
         << numeric_limits<float>::round_error() << endl;
     cout << "float rounding style = "
         << numeric_limits<float>::round_style << endl;
+    cout << endl;
+
+    double smallestDouble = numeric_limits<double>::min();
+    double doubleEps = numeric_limits<double>::epsilon();
+    long double largestLongDouble = numeric_limits<long double>::max();
+    long double longDoubleEpsilon = numeric_limits<long double>::epsilon();
+
+    cout << "smallest double = " << smallestDouble << endl;
+    cout << "double epsilon = " << doubleEps << endl;
+    cout << "largest long double = " << largestLongDouble <<endl;
+    cout << "long double epsilon = " <<longDoubleEpsilon << endl;
+    
 }
