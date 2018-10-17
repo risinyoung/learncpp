@@ -1,0 +1,2 @@
+example number: 5
+grid size: 0.01
