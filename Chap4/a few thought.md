@@ -1,4 +1,4 @@
-##关于本章的一些想法（主要是 namespace)
+## 关于本章的一些想法（主要是 namespace) ##
 ---
 
 - 同名 namespace 会被依次查找，所以可以混合多个同名 namespace ，类似接口的扩展
@@ -10,6 +10,8 @@
 - using 引入会覆盖上一级作用域的变量名
 - 为了函数不修改传入数组，书上用的形参是 `const double ** const`，这是不对的，会报错，可能是书比较老了，c++后来的标准不允许这样。这也很好理解，二级指针要想像常量一样去使用，应该层层`const`, 正确的声明是 `const double * const * const`
 - 函数的形参如果有某个 namespace 里的变量，不用声明那个 namespace 中的函数，也不用 :: 在调用的函数前，编译器会去搜索的
-```f(ns::a){
+```
+f(ns::a){
     g(a) \\ g in ns, no need to use ::
 }
+```
