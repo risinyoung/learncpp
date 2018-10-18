@@ -1,5 +1,5 @@
 #include <cstdlib>
 int main(){
     using namespace std;
-    system("dir");
+    system("powershell ls");
 }
