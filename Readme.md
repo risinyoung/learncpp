@@ -12,6 +12,7 @@
 ### 想法（有想法的时候添加）
 - [namespace](/Chap4/a_few_thought.md 'Chap4 相关')
 - [单双精度运行时间](/Chap4/about_runtime.md '单双精度运行时间')
+- [关于递归、newton 和 system() 函数](/Chap4/recur_newton_system.md '关于递归、newton 和 system() 函数')
 ---
 ### C++和面向对象数值计算
 - [x] [Chap1  基本类型](/Chap1)
