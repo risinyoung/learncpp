@@ -1,6 +1,6 @@
 #include <ch4it.hpp>
 double bisctn(double a, double b, double (*f)(double), double delta, double epsn){
-    int static maxit = 10000;
+    int static maxit = 1000;
     double u = f(a);
     double e = b - a;
     double c;
@@ -15,23 +15,20 @@ double bisctn(double a, double b, double (*f)(double), double delta, double epsn
     return c;
 }
 
-double fa(double x){
-    if(x) return 1.0/x - pow(2,x);
-    else{
-        cout << "division by zero occurred in function fa()" << endl;
-        exit(1);
+double newton(double xp, pfn f, pfn fd, double delta, double epson){
+    static int mxt = 500;
+    double v = f(xp);
+    double xnew;
+    for(int k = 1; k <= mxt; k++){
+        double derv = fd(xp);
+        if(!derv){
+            cout << "Division by 0 occurated in newton()" << endl;
+            exit(1);
+        }
+        xnew = xp - v/derv;
+        v = f(xnew);
+        if(fabs(xnew - xp) < delta || fabs(v) < epsn) return xnew;
+        xp = xnew;
     }
-}
-
-double fb(double x){
-    return pow(2, -x) + exp(x) + 2*cos(x) -6;
-}
-
-double fc(double x){
-    double denorm = ((2*x - 9)*x + 18)*x - 2;
-    if(denorm) return (((x + 4)*x + 3)*x - 5);
-    else{
-        cout << "division by zero occurred in function fa()" << endl;
-        exit(1);
-    }
+    return xnew;
 }
