@@ -19,7 +19,7 @@
 - [x] [Chap2  表达式与语句](/Chap2)
 - [x] [Chap3  派生类型](/Chap3)
 > 多项式求值，梯形公式和 Simpson 公式求积
-- [ ] [Chap4  命名空间和文件](/Chap4)
+- [x] [Chap4  命名空间和文件](/Chap4)
 - [ ] Chap5  类
 - [ ] Chap6  运算符重载
 - [ ] CHap7  模板
