@@ -10,7 +10,7 @@
 - [廖雪峰 git 总结](https://github.com/hongiii/gitNotes_from_Liao '有 md 和 pdf 格式')
 
 ### 想法（有想法的时候添加）
-
+- [namespace](/Chap4/learncpp/Chap4/a_few_thought.md 'Chap4 相关')
 - [单双精度运行时间](/Chap4/about_runtime.md '单双精度运行时间')
 ---
 ### C++和面向对象数值计算
