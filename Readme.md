@@ -27,8 +27,9 @@
 - [x] [Chap4  命名空间和文件](/Chap4)
 > makefile, gprof, gdb, sstream, fstream, 二分法和 newton 法
 - [x] [Chap5  类](/Chap5)
-> 类、龙格-库塔、显隐欧拉
-- [ ] Chap6  运算符重载
+> 类、龙格-库塔、显隐欧拉、Gauss 求积法、Gauss-Lobatto 求积公式（后两种求积公式在练习题中，还没有实现）
+- [x] Chap6  运算符重载
+> 复数类、向量类、矩阵类（包含`CG`方法），练习中还有一些别的要求，还没实现，关于延迟求值问题，也还未实现
 - [ ] CHap7  模板
 - [ ] Chap8  类的继承
 - [ ] Chap9 异常处理
